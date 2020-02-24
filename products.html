@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sample Home Page</title>
+	<link type="text/css" href="style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header>
+		<div id="logo"><span><a href="home.html">E-farm</a></span>
+		</div>
+		<nav id="primary_nav_wrap">
+			<ul>
+			  <li class="current-menu-item"><a href="#"><i class="fa fa-fw fa-home"></i>Home</a></li>
+			  <li><a href="#">Products</a>
+				<ul>
+				  <li><a href="#">Fruits</a></li>
+				  <li><a href="#">Vegetables</a></li>
+				  <li><a href="#">Fish</a></li>
+					<li><a href="#">Grains</a></li>
+					<li><a href="#">Poultry</a></li>
+				  <li><a href="#">Livestock</a></li>
+					<li><a href="#">Others</a>
+						<ul>
+						  <li><a href="#">Other Product 1</a></li>
+						  <li><a href="#">Other Product 2</a></li>
+						</ul>
+					  </li>
+				  </ul></li>
+			  <li><a href="#">About Us</a></li>
+			  <li><a href="#">Contact Us</a></li>
+				<li><a href="#"><i class="fa fa-fw fa-user"></i>Account</a>
+				<ul>
+				  <li><a href="#">Sign Up</a></li>
+				  <li><a href="#">Login</a></li>
+				</ul>
+			  </li>
+				<li><a href="#">Cart</a></li>
+			</ul>
+		</nav>
+		
+		<!--Small Menu -->
+		<div class="small-menu">
+     	<form>
+          <select name="URL" onchange="window.location.href=this.form.URL.options[this.form.URL.selectedIndex].value">
+              <option value="#">Home</option>
+              <option value="#">Products</option>
+              <option value="#">Contant Us</option>
+			  <option value="#">About Us</option>
+              <option value="#">Login</option>
+              <option value="#">Cart</option>
+          </select>
+     	</form>
+		 <!-- End of small menu -->
+</div>
+	</header>
+	<div class="main">
+				<div class="column">
+					<img alt="Fruits" src="images/fruits.jpg" />
+					<figcaption><a href="details.html">Fruits</a></figcaption>
+				</div>
+				<div class="column">
+					<img alt="Fish" src="images/fish.jpg" />
+					<a href="details"><figcaption>Fish</figcaption>
+					</a>
+				</div>
+				<div class="column">
+					<img alt="grains" src="images/grains.jpg" />
+					<figcaption>Grains</figcaption>
+				</div>
+				<div class="column">
+					<img alt="Fruits" src="images/fruits.jpg" />
+					<figcaption><a href="#">Fruits</a></figcaption>
+				</div>
+				<div class="column">
+					<img alt="Fish" src="images/fish.jpg" />
+					<a href="details"><figcaption>Fish</figcaption>
+					</a>
+				</div>
+				<div class="column">
+					<img alt="grains" src="images/grains.jpg" />
+					<figcaption>Grains</figcaption>
+				</div>
+				<div class="column">
+					<img alt="Fruits" src="images/fruits.jpg" />
+					<figcaption><a href="#">Fruits</a></figcaption>
+				</div>
+				<div class="column">
+					<img alt="Fish" src="images/fish.jpg" />
+					<a href="details"><figcaption>Fish</figcaption>
+					</a>
+				</div>
+				<div class="column">
+					<img alt="grains" src="images/grains.jpg" />
+					<figcaption>Grains</figcaption>
+				</div>
+	</div>
+	<footer><span>Copyright &copy; 2019. All rights Reserved</span></footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sample Home Page</title>
+	<link type="text/css" href="style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header>
+		<div id="logo"><span><a href="home.html">E-farm</a></span>
+		</div>
+		<nav id="primary_nav_wrap">
+			<ul>
+			  <li class="current-menu-item"><a href="#"><i class="fa fa-fw fa-home"></i>Home</a></li>
+			  <li><a href="#">Products</a>
+				<ul>
+				  <li><a href="products.html">Fruits</a></li>
+				  <li><a href="#">Vegetables</a></li>
+				  <li><a href="#">Fish</a></li>
+					<li><a href="#">Grains</a></li>
+					<li><a href="#">Poultry</a></li>
+				  <li><a href="#">Livestock</a></li>
+					<li><a href="#">Others</a>
+						<ul>
+						  <li><a href="#">Other Product 1</a></li>
+						  <li><a href="#">Other Product 2</a></li>
+						</ul>
+					  </li>
+				  </ul></li>
+			  <li><a href="#">About Us</a></li>
+			  <li><a href="#">Contact Us</a></li>
+				<li><a href="#"><i class="fa fa-fw fa-user"></i>Account</a>
+				<ul>
+				  <li><a href="#">Sign Up</a></li>
+				  <li><a href="#">Login</a></li>
+				</ul>
+			  </li>
+				<li><a href="#">Cart</a></li>
+			</ul>
+		</nav>
+		
+		<!--Small Menu -->
+		<div class="small-menu">
+     	<form>
+          <select name="URL" onchange="window.location.href=this.form.URL.options[this.form.URL.selectedIndex].value">
+              <option value="#">Home</option>
+              <option value="#">Products</option>
+              <option value="#">Contant Us</option>
+			  <option value="#">About Us</option>
+              <option value="#">Login</option>
+              <option value="#">Cart</option>
+          </select>
+     	</form>
+		 <!-- End of small menu -->
+</div>
+	</header>
+	<div class="details">
+		<div id="column1">
+			<h2 class="w3-center">images</h2>
+
+			<div class="w3-content w3-display-container">
+			  <img class="mySlides" alt="error" src="img_snowtops.jpg" style="width:100%"/>
+			  <img class="mySlides" src="img_lights.jpg" style="width:100%"/>
+			  <img class="mySlides" src="img_mountains.jpg" style="width:100%"/>
+			  <img class="mySlides" src="img_forest.jpg" style="width:100%"/>
+
+			  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+			  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+					</div>
+		</div>
+		<div id="column2">
+		</div>
+	</div>
+	<footer><span>Copyright &copy; 2019. All rights Reserved</span></footer>
+	<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</body>
+</html>
