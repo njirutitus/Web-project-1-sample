@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Sample Home Page</title>
 	<link type="text/css" href="style.css" rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 
 <body>
@@ -61,24 +61,38 @@
 			</form>
 			</div>
 		</div>
-		<div class="main">
-			<h1>FEATURED PRODUCTS</h1>
-			<div class="featured">
-				<div class="column">
-						<img alt="Fruits" src="images/fruits.jpg" />
-						<figcaption><a href="#">Fruits</a></figcaption>
+		
+		<div class="featured-products">
+			<!-- Sidebar -->
+			<aside style="width: 30%;">
+				...
+			</aside>
+
+			<!-- Main -->
+			<main>
+				<h1>FEATURED PRODUCTS</h1>
+				<div style="display: flex; flex-wrap: wrap; margin-left: -8px; margin-right: -8px;">
+					<!-- A card with given width -->
+					<div style="flex-basis: 25%;padding-left: 8px;padding-right: 8px;">
+						<img alt="Fruits" src="images/fruits.jpg" /><br />
+						<a href="#">Fruits</a>
 					</div>
-					<div class="column">
-						<img alt="Fish" src="images/fish.jpg" title="Fish"/>
-						<a href="#"><figcaption>Fish</figcaption>
-						</a>
+
+					<div style="flex-basis: 25%;padding-left: 8px;padding-right: 8px;">
+						<img alt="Fish" src="images/fish.jpg" title="Fish"/><br />
+						<a href="#">Fish</a>
 					</div>
-					<div class="column">
-						<img alt="grains" src="images/grains.jpg" />
-						<a href=""><figcaption>Grains</figcaption></a>
+					
+					<div style="flex-basis: 25%;padding-left: 8px;padding-right: 8px;">
+						<img alt="grains" src="images/grains.jpg" /><br />
+						<a href="">Grains</a>
+					</div>
+					<div style="flex-basis: 25%;padding-left: 8px;padding-right: 8px;">
+						<img alt="grains" src="images/grains.jpg" /><br />
+						<a href="">Grains</a>
 					</div>
 				</div>
-
+			</main>
 		</div>
 		<footer><span>Copyright &copy; 2019. All rights Reserved</span></footer>
 	</div>

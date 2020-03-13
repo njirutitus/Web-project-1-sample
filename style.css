@@ -143,28 +143,18 @@ footer{
 	color: whitesmoke;
 	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 }
-.column{
-	margin-top: 10px;
-	width: 30%;
-	height:300px;
-	margin-left: 2%;
-	margin-bottom: 5px;
-	padding: 0px;
-	text-align: center;
-	font-size: 24px;
-	float: left;
-	-moz-box-shadow: 5px 5px 5px #777777;   
-	-webkit-box-shadow: 5px 5px 5px #777777;  
-	box-shadow: 5px 5px 5px #777777;
-
+.featured-products{
+	display: flex;
 }
-.column >img{
-	height:200px;
-	width:300px;
+main{
+	flex: 1; 
+	overflow: auto;
+}
+img{
+	height:500px;
+	width:500px;
 	vertical-align: middle;
-}
-.column figcaption{
-	vertical-align: bottom;
+	position: relative
 }
 
 a{
@@ -175,14 +165,6 @@ h1{
 	background-color: white;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 }
-#column1{
-	width: 40%;
-	float: left;
-}
-#column2{
-	width: 60%;
-	float: left;
-}
 .mySlides {display:none;}
 
 @media screen and ( max-width: 800px ) {
@@ -190,7 +172,9 @@ h1{
 #primary_nav_wrap { display:none; }
 .column{
 		float: none;
-		width: 100px;
+		text-align: center;
+		align-items: center;
+		width: 90%;
 	}
 }
 @media screen and ( min-width: 1025px ) {
