@@ -2,7 +2,7 @@
 .my-content-wrapper{
 	display: flex;
 	flex-direction: column;
-	height: 100%;
+	min-height: 100%;
 }
 header{
 	/*background-color: #3f51b5;*/
@@ -20,7 +20,8 @@ header p{
 #search{
 	flex-grow: 1;
 	display: flex;
-	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 20%;
 	text-align: center;
 }
 #search>input{
@@ -52,6 +53,21 @@ article{
 	flex-basis: 250px;
 	padding-left: 8px;
 	padding-right: 8px;
+	display: flex;
+	flex-direction: column;
+}
+.item-cover{
+	height: 150px;
+	width: 100%;
+}
+.item-content{
+	flex: 1;
+}
+.item-content:hover{
+	background-color:#868686;
+}
+.item-content:last-child{
+	text-decoration: line-through;
 }
 img{
 	max-width: 100%;
@@ -64,6 +80,25 @@ aside>ul li{
 	margin-left: -25px;
 	margin-top: -8px;
 }
+.p-mega-menu-container {
+    /* Used to position the mega menu */
+    position: relative;
+}
+
+.p-mega-menu-content {
+    /* Border */
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-top: -1px;
+
+    /* Hidden by default */
+    display: none;
+
+}
+
+.p-mega-menu-trigger:hover .p-mega-menu-content {
+    /* Show the mega menu when hovering the trigger item */
+    display: block;
+}
 a{
 	text-decoration: none;
 	font-size: 20px;
@@ -71,4 +106,6 @@ a{
 }
 footer{
 	flex-shrink: 0;
+	margin: auto;
+	text-align:center; 
 }

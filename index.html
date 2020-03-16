@@ -1,5 +1,7 @@
+
+
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Electronic Farm</title>
@@ -11,44 +13,79 @@
 <body>
 	<div class="my-content-wrapper">
 		<header>
-			<p>E-farm</p>
+			<p><a href="">E-farm</a></p>
 			<div id="search">
 				<input type="search" name="search" placeholder="Search" />
 			</div>
-			<p>Your <br/>Account</p>
-			<p><i class="material-icons">shopping_cart</i>Cart</p>
+			<p><a href="">Your <br/>Account</a></p>
+			<p><a href=""><i class="material-icons">shopping_cart</i>Cart</a></p>
 		</header>
+		
+		
+		
 		<main>
 			<aside>
-				<ul>
-					<li><a href="">Fruits</a></li>
-					<li><a href="">Vegetables</a></li>
-					<li><a href="">Fish</a></li>
-					<li><a href="">Grains</a></li>
-					<li><a href="">Poultry</a></li>
-					<li><a href="">Livestock</a></li>
-				</ul>			
+				<ul class="p-mega-menu-container">
+					<li><a href="" class="p-mega-menu-container">Fruits</a>
+					<ul class="p-mega-menu-content">
+						<li><a href="products.html?p=apples">Apples</a></li>
+						<li><a href="products.html?p=bananas">Bananas</a></li>
+						<li><a href="products.html?p=oranges">Oranges</a></li>
+						<li><a href="products.html?p=mangoes">Mangoes</a></li>
+						<li><a href="products.html?p=pineapples">Pineapples</a></li>
+					</ul></li>
+					<li><a href="products.html?p=vegetables">Vegetables</a></li>
+					<li><a href="products.html?p=fish">Fish</a></li>
+					<li><a href="products.html?p=grains">Grains</a></li>
+					<li><a href="products.html?p=poultry">Poultry</a></li>
+					<li></li>
+				</ul>
 			</aside>
 			<article>
-				<div class="item">
-					<img alt="Fruits" src="images/fruits.jpg" /><br />
-					<a href="#">Fruits</a>
-				</div>
-				<div class="item">
-					<img alt="Fish" src="images/fish.jpg" title="Fish"/><br />
-					<a href="#">Fish</a>
-				</div>
-				<div class="item">
-					<img alt="grains" src="images/grains.jpg" /><br />
-					<a href="">Grains</a>
-				</div>
-				<div class="item">
-					<img alt="tubers" src="images/tubers.jpg" /><br />
-					<a href="">Tubers</a>
-				</div>
-			
+					<div class="item">
+						<div class="item-cover">
+							<img alt="Fruits" src="images/fruits.jpg" />
+						</div>
+						<div class="item-content">
+							<a href="#">Fruits</a>
+							<p>Kshs. 200/kg</p>
+							<p>Kshs. 300/kg</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-cover">
+							<img alt="Fish" src="images/fish.jpg" title="Fish"/>
+						</div>
+						<div class="item-content">
+							<a href="#">Fish</a>
+							<p>Kshs. 200/kg</p>
+							<p>Kshs. 300/kg</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-cover">
+							<img alt="grains" src="images/grains.jpg" />
+						</div>
+						<div class="item-content">
+							<a href="">Grains</a>
+							<p>Kshs. 200/kg</p>
+							<p>Kshs. 300/kg</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-cover">
+							<img alt="tubers" src="images/tubers.jpg" />
+						</div>
+						<div class="item-content">
+							<a href="">Tubers</a>
+							<p>Kshs. 200/kg</p>
+							<p>Kshs. 300/kg</p>
+						</div>
+					</div>			
 			</article>
 		</main>
+		
+		
 		<footer>
 			<p>Copyright 2020</p>
 		</footer>
