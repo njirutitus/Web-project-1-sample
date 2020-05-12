@@ -80,6 +80,31 @@ aside>ul li{
 	margin-left: -25px;
 	margin-top: -8px;
 }
+.dropdown{
+	position: relative;
+}
+.dropdown-content {
+	/* Position it right below the trigger element */
+	display: none;
+	left: 0;
+	padding-top: 4px;
+	position: absolute;
+	top: 100%;
+
+	/* It should be on the top of other elements */
+	background-Color: #FFF;
+	z-index: 9999;
+
+	/* Size */
+	height: 200px;
+	width: 200px;
+}
+.dropdown-content > a {
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 .p-mega-menu-container {
     /* Used to position the mega menu */
     position: relative;
