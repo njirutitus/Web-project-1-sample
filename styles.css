@@ -66,7 +66,7 @@ article{
 .item-content:hover{
 	background-color:#868686;
 }
-.item-content:last-child{
+.old-price{
 	text-decoration: line-through;
 }
 img{
@@ -80,6 +80,37 @@ aside>ul li{
 	margin-left: -25px;
 	margin-top: -8px;
 }
+.aside-accordion{
+	/* Border
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom-color: transparent;  * */
+    border-radius: 4px;	
+}
+.aside-accordion-item{
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.aside-accordion-item-heading{
+	/* Center the content horizontally */
+	align-items: center;
+	display: flex;
+
+	cursor: pointer;
+	padding: 16px;	
+}
+.aside-accordion-item-heading-toggleicon{
+	margin-right: 12px;	
+}
+.aside-accordion-item-heading-title{
+	flex: 1; /* Take remaining width */
+}
+.aside-accordion-item-content{
+	display: none;
+	border-top: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 16px;
+}
+.aside-accordion-item-heading-toggleicon:hover .aside-accordion-item-content{
+	display: block;
+} 
 .dropdown{
 	position: relative;
 }

@@ -5,6 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Electronic Farm</title>
+	<link href="fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
 	<link href="styles.css" type="text/css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="icon" type="image/png" href="images/icons/favicon.png" />
@@ -25,14 +26,45 @@
 		
 		<main>
 			<aside>
-				<div class="dropdown">
-					<a href="#">Fruits</a>
-					<div class="dropdown-content">
-						<a href="products.html?p=apples">Apples</a>
-						<a href="products.html?p=bananas">Bananas</a>
-						<a href="products.html?p=oranges">Oranges</a>
-						<a href="products.html?p=mangoes">Mangoes</a>
-						<a href="products.html?p=pineapples">Pineapples</a>
+				<div class="aside-accordion">
+					<div class="aside-accordion-item">
+						<div class="aside-accordion-item-heading">
+							<div class="aside-accordion-item-heading-toggleicon"><i class="fas fa-chevron-down"></i></div>
+							<div class="aside-accordion-item-heading-title">Fruits</div>
+						</div>
+						<div class="aside-accordion-item-content">
+							<a href="products.html?p=apples">Apples</a>
+							<a href="products.html?p=bananas">Bananas</a>
+							<a href="products.html?p=oranges">Oranges</a>
+							<a href="products.html?p=mangoes">Mangoes</a>
+							<a href="products.html?p=pineapples">Pineapples</a>
+						</div>
+					</div>
+					<div class="aside-accordion-item">
+						<div class="aside-accordion-item-heading">
+							<div class="aside-accordion-item-heading-toggleicon"><i class="fas fa-chevron-down"></i></div>
+							<div class="aside-accordion-item-heading-title">Fruits</div>
+						</div>
+						<div class="aside-accordion-item-content">
+							<a href="products.html?p=apples">Apples</a>
+							<a href="products.html?p=bananas">Bananas</a>
+							<a href="products.html?p=oranges">Oranges</a>
+							<a href="products.html?p=mangoes">Mangoes</a>
+							<a href="products.html?p=pineapples">Pineapples</a>
+						</div>
+					</div>
+					<div class="aside-accordion-item">
+						<div class="aside-accordion-item-heading">
+							<div class="aside-accordion-item-heading-toggleicon"><i class="fas fa-chevron-down"></i></div>
+							<div class="aside-accordion-item-heading-title">Fruits</div>
+						</div>
+						<div class="aside-accordion-item-content">
+							<a href="products.html?p=apples">Apples</a>
+							<a href="products.html?p=bananas">Bananas</a>
+							<a href="products.html?p=oranges">Oranges</a>
+							<a href="products.html?p=mangoes">Mangoes</a>
+							<a href="products.html?p=pineapples">Pineapples</a>
+						</div>
 					</div>
 				</div>
 			</aside>
@@ -43,8 +75,8 @@
 						</div>
 						<div class="item-content">
 							<a href="#">Fruits</a>
-							<p>Kshs. 200/kg</p>
-							<p>Kshs. 300/kg</p>
+							<p class="new-price">Kshs. 200/kg</p>
+							<p class="old-price">Kshs. 300/kg</p>
 						</div>
 					</div>
 					<div class="item">
@@ -54,7 +86,7 @@
 						<div class="item-content">
 							<a href="#">Fish</a>
 							<p>Kshs. 200/kg</p>
-							<p>Kshs. 300/kg</p>
+							<p class="old-price">Kshs. 300/kg</p>
 						</div>
 					</div>
 					<div class="item">
@@ -64,7 +96,7 @@
 						<div class="item-content">
 							<a href="">Grains</a>
 							<p>Kshs. 200/kg</p>
-							<p>Kshs. 300/kg</p>
+							<p class="old-price">Kshs. 300/kg</p>
 						</div>
 					</div>
 					<div class="item">
@@ -74,7 +106,7 @@
 						<div class="item-content">
 							<a href="">Tubers</a>
 							<p>Kshs. 200/kg</p>
-							<p>Kshs. 300/kg</p>
+							<p class="old-price">Kshs. 300/kg</p>
 						</div>
 					</div>			
 			</article>
