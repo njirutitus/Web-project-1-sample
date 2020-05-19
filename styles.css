@@ -12,7 +12,7 @@ header{
 	margin-bottom: 8px;
 	flex-shrink: 0; 
 	background-color: #cccfff;
-	position: sticky;
+	/* position: sticky; */
 }
 header p{
 	flex-grow: 0;
@@ -133,9 +133,15 @@ aside>ul li{
 	background-Color: #FFF;
 	z-index: 9999;
 
-	/* Size */
-	height: 200px;
-	width: 200px;
+	/* Size 
+	height: 200px;*/
+	width: 200px; 
+	
+	/* Border */
+	border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+	
+	transform: translate3d(-50%, 0, 0);
 }
 .dropdown-content > a {
     display: block;

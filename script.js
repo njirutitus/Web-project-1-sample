@@ -1,6 +1,7 @@
 // JavaScript Document
 var acc = document.getElementsByClassName("aside-accordion-item-heading");
 var i;
+var helpbutton = document.getElementById("helpbutton");
 
 for (i = 0; i < acc.length; i++) {
 	acc[i].addEventListener("click", function() {
@@ -14,10 +15,10 @@ for (i = 0; i < acc.length; i++) {
 		var icon = toggle.firstElementChild;
 		if (panel.style.display === "block") {
 			panel.style.display = "none";
-			icon.className = "fas fa-chevron-right";
+			icon.className = "fas fa-chevron-down";
 		} else {
 			panel.style.display = "block";
-			icon.className = "fas fa-chevron-down";
+			icon.className = "fas fa-chevron-up";
 		}
 	});
 }
