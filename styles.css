@@ -40,12 +40,6 @@
 #search>i{
 	vertical-align: center;
 }
-<<<<<<< HEAD
-#search>p{
-	background-color:#3f51b5; 
-}
-#home-main{
-=======
 .divider{
 	/* Content is centered horizontally */
 	align-items: center;
@@ -80,7 +74,6 @@
 	background-color: rgba(0, 0, 0, .3);
 }
 main{
->>>>>>> product
 	display: flex;
 	flex-grow: 1;
 	flex-direction: row;
