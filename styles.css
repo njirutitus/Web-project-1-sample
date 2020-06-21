@@ -7,13 +7,13 @@
 	font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 #main-header{
-	/*background-color: #3f51b5;*/
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 8px;
 	flex-shrink: 0; 
 	background-color: #fff;
-	/* position: sticky; */
+	align-items: center;
+	position: sticky; 
 }
 #main-header p{
 	flex-grow: 0;
@@ -28,9 +28,9 @@
 	flex-grow: 1;
 	display: flex;
 	border: 1px solid rgba(0, 0, 0, 0.3);
-	border-radius: 20%;
 	text-align: center;
 	font-size: 26px;
+	background-color:#3f51b5; 
 }
 #search>input{
 	border-color: transparent;
@@ -38,6 +38,9 @@
 }
 #search>i{
 	vertical-align: center;
+}
+#search>p{
+	background-color:#3f51b5; 
 }
 #home-main{
 	display: flex;
