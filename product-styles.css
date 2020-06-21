@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+.aside-price-slider{
+	/* Content is centered horizontally */
+	align-items: center;
+	display: flex;
+
+	/* Size */
+	height: 32px;
+}
+.aside-price-slider-left{
+	/* Width based on the current value */
+	height: 2px;
+	width: 20%;
+
+	/* Colors */
+	background-color: rgba(0, 0, 0, .3);
+}
+.aside-price-slider-circle{
+	/* Size */
+	height: 32px;
+	width: 32px;
+
+	/* Rounded border */
+	border-radius: 9999px;
+
+	/* Colors */
+	background-color: rgba(0, 0, 0, .3);
+}
+.aside-price-slider-right{
+	/* Take the remaining width */
+	flex: 1;
+	height: 2px;
+
+	/* Colors */
+	background-color: rgba(0, 0, 0, .3);
+}
+aside input{
+	display: inline;
+}
+.p-radio-button-group{
+	display: flex;
+
+	/* Border */
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+	height: 32px;
+}
+.p-radio-button-group label{
+	/* Center the content */
+	align-items: center;
+	display: inline-flex;
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+
+	padding: 8px;
+	/* For selected radio 
+	background-color: #00449E;
+	color: #FFF; */
+
+	/* For not selected radio */
+	background-color: transparent;
+	color: #CCC;
+}
+.p-radio-button-group label input{
+	/* Hide it 
+	display: none; */
+}
+
+/* Remove the right border from the last label */
+.p-radio-button-group label:last-child {
+	border-right-color: transparent;
+}

@@ -2,6 +2,7 @@
 .my-content-wrapper{
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	min-height: 100%;
 	background-color:rgb(245, 245, 245);
 	font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
@@ -39,13 +40,52 @@
 #search>i{
 	vertical-align: center;
 }
+<<<<<<< HEAD
 #search>p{
 	background-color:#3f51b5; 
 }
 #home-main{
+=======
+.divider{
+	/* Content is centered horizontally */
+	align-items: center;
+	display: flex;
+
+	/* Size */
+	height: 32px;
+}
+.divider-left{
+	/* Width based on the current value */
+	height: 2px;
+	width: 50%;
+
+	/* Colors */
+	background-color: rgba(0, 0, 0, .3);
+	
+}
+.divider-or{
+	/* Size */
+	width: 32px;
+	line-height: 32px;
+
+	/* Colors */
+	background-color: rgba(0, 0, 0, .3);
+}
+.divider-right{
+	/* Take the remaining width */
+	flex: 1;
+	height: 2px;
+
+	/* Colors */
+	background-color: rgba(0, 0, 0, .3);
+}
+main{
+>>>>>>> product
 	display: flex;
 	flex-grow: 1;
 	flex-direction: row;
+	align-items: flex-start;
+
 }
 #main-menu{
 	width: 25%;
@@ -58,6 +98,7 @@
 	flex-wrap: wrap;
 	margin-left: 8px;
 	margin-right: 8px;
+	overflow: auto;
 }
 .item{
 	position: relative;
@@ -187,4 +228,9 @@ footer{
 	text-align:center; 
 	background-color: #cccfff;
 	width: 100%;
+}
+@media handheld{
+	aside{
+		display: none;
+	}
 }
