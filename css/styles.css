@@ -1,0 +1,190 @@
+/* CSS Document */
+.my-content-wrapper{
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	background-color:rgb(245, 245, 245);
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+#main-header{
+	/*background-color: #3f51b5;*/
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 8px;
+	flex-shrink: 0; 
+	background-color: #fff;
+	align-items: center;
+	/* position: sticky; */
+}
+#main-header p{
+	flex-grow: 0;
+	padding-left: 8px;
+	padding-right: 8px;
+	font-size: 20px;
+}
+#logo{
+	font-weight: 900;;
+}
+#search{
+	flex-grow: 1;
+	display: flex;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	text-align: center;
+	font-size: 26px;
+}
+#search>input{
+	border-color: transparent;
+    flex: 1;
+}
+#search>i{
+	vertical-align: center;
+}
+#search>p{
+	background-color:#3f51b5; 
+}
+#home-main{
+	display: flex;
+	flex-grow: 1;
+	flex-direction: row;
+}
+#main-menu{
+	width: 25%;
+	padding: 8px;
+	border: 1px #747474 solid;
+	background-color: #fff;
+}
+#featured-products{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+.item{
+	position: relative;
+	flex-basis: 250px;
+	padding-left: 8px;
+	padding-right: 8px;
+	display: flex;
+	flex-shrink: 0;
+	flex-direction: column;
+}
+.item-cover{
+	height: 150px;
+	width: 100%;
+}
+.item-content{
+	flex: 1;
+}
+.item-content:hover{
+	background-color:#868686;
+}
+.old-price{
+	text-decoration: line-through;
+}
+img{
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+}
+#main-menu>ul li{
+	list-style-type: none;
+	padding: 5px;
+	margin-left: -25px;
+	margin-top: -8px;
+}
+.aside-accordion{
+	/* Border
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom-color: transparent;  * */
+    border-radius: 4px;	
+}
+.aside-accordion-item{
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.aside-accordion-item-heading{
+	/* Center the content horizontally */
+	align-items: center;
+	display: flex;
+
+	cursor: pointer;
+	padding: 16px;	
+}
+.aside-accordion-item-heading:hover, .active{
+	background-color: #ccc;
+}
+.aside-accordion-item-heading-toggleicon{
+	margin-right: 12px;	
+}
+.aside-accordion-item-heading-title{
+	flex: 1; /* Take remaining width */
+}
+.aside-accordion-item-content{
+	display: none;
+	border-top: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 16px;
+}
+.aside-accordion-item-content a{
+	display: block;
+} 
+.dropdown{
+	position: relative;
+}
+.dropdown-content {
+	/* Position it right below the trigger element */
+	display: none;
+	left: 0;
+	padding-top: 4px;
+	position: absolute;
+	top: 100%;
+
+	/* It should be on the top of other elements */
+	background-Color: #FFF;
+	z-index: 9999;
+
+	/* Size 
+	height: 200px;*/
+	width: 200px; 
+	
+	/* Border */
+	border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+	
+	transform: translate3d(-50%, 0, 0);
+}
+.dropdown-content > a {
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.p-mega-menu-container {
+    /* Used to position the mega menu */
+    position: relative;
+}
+
+.p-mega-menu-content {
+    /* Border */
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-top: -1px;
+
+    /* Hidden by default */
+    display: none;
+
+}
+
+.p-mega-menu-trigger:hover .p-mega-menu-content {
+    /* Show the mega menu when hovering the trigger item */
+    display: block;
+}
+a{
+	text-decoration: none;
+	font-size: 20px;
+	
+}
+footer{
+	flex-shrink: 0;
+	margin: auto;
+	text-align:center; 
+	background-color: #cccfff;
+	width: 100%;
+}
