@@ -40,7 +40,8 @@
 	vertical-align: center;
 }
 #search>p{
-	background-color:#3f51b5; 
+	background-color:#3f51b5;
+	height: 100%; 
 }
 #home-main{
 	display: flex;
